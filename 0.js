@@ -135,9 +135,9 @@ if (storage.get(engine_version, true)) {
   }
 }
 var w = fInit();
-// console.setTitle("好好学习");
+// console.setTitle("学习小助手");
 // console.show();
-fInfo("好好学习Pro" + newest_version + "脚本初始化");
+fInfo("学习小助手" + newest_version + "脚本初始化");
 // 初始化宽高
 var [device_w, device_h] = init_wh();
 // log("fina:", device_w, device_h);

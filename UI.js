@@ -258,7 +258,7 @@ ui.layout(
                                 <vertical padding="10 8" h="auto" w="0" layout_weight="1">
                                     <text w="auto" textColor="#222222" textSize="15sp" text="单账号(限 1 个)" />
                                     <text w="auto" textColor="#999999" textSize="12sp" text="使用前确保账号已完成短信验证" />
-                                    <text w="auto" textColor="#999999" textSize="12sp" text="账号:密码:token(换行/回车)" />
+                                    <text w="auto" textColor="#999999" textSize="12sp" text="账号:密码:token" />
                                     <text w="auto" textColor="#999999" textSize="12sp" text="结束后会自动登录账号" />
                                     <text w="auto" textColor="#999999" textSize="12sp" text="新增账号微信推送，按格式配置即可" />
                                     <text w="auto" textColor="#999999" textSize="12sp" text="没有则根据上面配置的pushplus_token为主" />

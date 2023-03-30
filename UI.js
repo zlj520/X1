@@ -14,7 +14,7 @@ ui.layout(
     <drawer id="drawer">
         <vertical>
             <appbar>
-                <toolbar id="toolbar" bg="#ff4fb3ff" title="学习助手"/>
+                <toolbar id="toolbar" bg="#ff4fb3ff" title="学习小助手"/>
                 <tabs id="tabs" bg="#ff4fb3ff"/>
             </appbar>
             <viewpager id="viewpager">
@@ -27,7 +27,7 @@ ui.layout(
                                         <text text="脚本选择" textColor="#222222" textSize="16sp" maxLines="1" />
                                         <text text="切换脚本后需在配置页设置" textColor="#999999" textSize="14sp" maxLines="1" />
                                     </vertical>
-                                    <spinner id="script_chosen" marginLeft="4" marginRight="6" entries="学习助手" />
+                                    <spinner id="script_chosen" marginLeft="4" marginRight="6" entries="学习小助手" />
                                 </horizontal>
                             </card>
                             <card w="*" h="70" margin="10 5" cardCornerRadius="2dp" cardElevation="1dp" foreground="?selectableItemBackground">
@@ -501,7 +501,7 @@ ui.emitter.on("options_item_selected", (e, item) => {
             app.startActivity("console");
             break;
         case "关于":
-            alert("关于", "学习助手 v" + latest_version);
+            alert("关于", "学习小助手 v" + latest_version);
             break;
     }
     e.consumed = true;
@@ -589,11 +589,11 @@ ui.start.click(function () {
         return;
     }
     threads.start(function () {
-        execution = engines.execScript("学习助手", getScript(ui.script_chosen.getSelectedItemPosition()));
+        execution = engines.execScript("学习小助手", getScript(ui.script_chosen.getSelectedItemPosition()));
     });
 });
 
-// 保存学习助手脚本设置
+// 保存学习小助手脚本设置
 ui.ttxs_pro_save.click(function () {
     TTXS_PRO_CONFIG.put("watchdog", ui.ttxs_pro_watchdog.getText() + "");
     TTXS_PRO_CONFIG.put("slide_verify", ui.ttxs_pro_slide_verify.getText() + "");
@@ -622,10 +622,10 @@ ui.ttxs_pro_save.click(function () {
     TTXS_PRO_CONFIG.put("yinliang", ui.ttxs_pro_yinliang.getText() + "");
     TTXS_PRO_CONFIG.put("zhanghao", ui.ttxs_pro_zhanghao.getText() + "");
 
-    toastLog("学习助手配置保存成功！");
+    toastLog("学习小助手配置保存成功！");
 });
 
-// 重置学习助手脚本设置
+// 重置学习小助手脚本设置
 ui.ttxs_pro_reset.click(function () {
     TTXS_PRO_CONFIG.put("watchdog", "1800");
     ui.ttxs_pro_watchdog.setText(TTXS_PRO_CONFIG.get("watchdog"));
@@ -680,7 +680,7 @@ ui.ttxs_pro_reset.click(function () {
     TTXS_PRO_CONFIG.put("zhanghao", "");
     ui.ttxs_pro_zhanghao.setText(TTXS_PRO_CONFIG.get("zhanghao"));
 
-    toastLog("学习助手配置恢复默认！");
+    toastLog("学习小助手配置恢复默认！");
 });
 
 // 保存study脚本设置
